@@ -1,2 +1,0 @@
-# tapeloop.github.io
-Blog
