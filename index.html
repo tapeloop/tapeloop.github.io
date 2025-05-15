@@ -36,12 +36,12 @@
       font-size: 1.2rem;
     }
 
-    .post-list {
+    .post-list, .til-section {
       max-width: 800px;
       margin: 0 auto;
     }
 
-    .post {
+    .post, .til {
       background-color: var(--card-bg);
       padding: 1.5rem;
       border-left: 4px solid var(--accent-color);
@@ -50,7 +50,7 @@
       transition: transform 0.2s;
     }
 
-    .post:hover {
+    .post:hover, .til:hover {
       transform: translateY(-3px);
     }
 
@@ -66,9 +66,17 @@
       margin-bottom: 1rem;
     }
 
-    .post-excerpt {
+    .post-excerpt, .til-body {
       font-size: 1rem;
       line-height: 1.6;
+    }
+
+    h2.section-title {
+      font-size: 1.8rem;
+      color: var(--accent-color);
+      border-bottom: 1px dashed #30363d;
+      padding-bottom: 0.5rem;
+      margin-top: 4rem;
     }
 
     footer {
@@ -96,6 +104,14 @@
 
   <main class="post-list">
     <article class="post">
+      <h2 class="post-title">Voices in the Static: What Are Number Stations?</h2>
+      <p class="post-meta">Posted on May 2, 2025</p>
+      <p class="post-excerpt">
+        Mysterious broadcasts of robotic voices reading numbers over shortwave radio have haunted the airwaves for decades. Are they spy tools, prank stations, or something stranger? This post explores the history and cryptographic theory behind number stations.
+      </p>
+    </article>
+
+    <article class="post">
       <h2 class="post-title">Why You Should Learn Python in 2025</h2>
       <p class="post-meta">Posted on May 10, 2025</p>
       <p class="post-excerpt">
@@ -118,10 +134,42 @@
         Learn how to host a privacy-focused blog on the Tor network with static files, zero analytics, and no compromise.
       </p>
     </article>
+    
+    <article class="post">
+      <h2 class="post-title">Clean Code: Python Best Practices for 2025</h2>
+      <p class="post-meta">Posted on April 20, 2025</p>
+      <p class="post-excerpt">
+        From f-strings and dataclasses to pyproject.toml and type hints — here’s a distilled guide to writing beautiful, maintainable Python code that plays well with modern tooling and your future self.
+      </p>
+    </article>
+
+    <article class="post">
+      <h2 class="post-title">Pairing-Based Cryptography: A High-Level Primer</h2>
+      <p class="post-meta">Posted on April 6, 2025</p>
+      <p class="post-excerpt">
+        Bilinear pairings on elliptic curves enable powerful protocols like identity-based encryption and attribute-based access control. We explain the concepts, what pairings are, and where they’re used—without the heavy math.
+      </p>
+    </article>
   </main>
 
+  <section class="til-section">
+    <h2 class="section-title">TIL (Today I Learned)</h2>
+
+    <div class="til">
+      <p class="til-body"><strong>🛠 Shell:</strong> You can rerun the last command that began with "ssh" using <code>!ssh</code> in bash/zsh.</p>
+    </div>
+
+    <div class="til">
+      <p class="til-body"><strong>🐍 Python:</strong> Use <code>pathlib.Path().rglob("*.py")</code> to recursively find Python files in a directory.</p>
+    </div>
+
+    <div class="til">
+      <p class="til-body"><strong>📦 Git:</strong> Stash only staged changes with <code>git stash --keep-index</code>.</p>
+    </div>
+  </section>
+
   <footer>
-    &copy; 2025 <a href="https://github.com/tapeloop">tapeloop</a>. All thoughts are my own.
+    &copy; 2025 <a href="https://github.com/tapeloop">tapeloop</a> — Built with code & curiosity.
   </footer>
 </body>
 </html>
