@@ -29,11 +29,28 @@
     h1 {
       font-size: 3rem;
       color: var(--accent-color);
+      margin-bottom: 0.3rem;
     }
 
     .subtitle {
       color: #8b949e;
       font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .connect-links {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .connect-links a {
+      color: var(--accent-color);
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    .connect-links a:hover {
+      text-decoration: underline;
     }
 
     .post-list, .til-section {
@@ -100,72 +117,18 @@
   <header>
     <h1>Tapeloop</h1>
     <p class="subtitle">Programming • Privacy • Cryptography • Python</p>
+    <div class="connect-links">
+      <a href="https://infosec.exchange/@tapeloop" target="_blank" rel="noopener noreferrer">Mastodon</a> |
+      <a href="https://github.com/tapeloop" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
   </header>
 
   <main class="post-list">
-    <article class="post">
-      <h2 class="post-title">Voices in the Static: What Are Number Stations?</h2>
-      <p class="post-meta">Posted on May 2, 2025</p>
-      <p class="post-excerpt">
-        Mysterious broadcasts of robotic voices reading numbers over shortwave radio have haunted the airwaves for decades. Are they spy tools, prank stations, or something stranger? This post explores the history and cryptographic theory behind number stations.
-      </p>
-    </article>
-
-    <article class="post">
-      <h2 class="post-title">Why You Should Learn Python in 2025</h2>
-      <p class="post-meta">Posted on May 10, 2025</p>
-      <p class="post-excerpt">
-        Python keeps evolving, and its presence in cybersecurity and backend services is stronger than ever. Here’s why it's still the best tool in your kit.
-      </p>
-    </article>
-
-    <article class="post">
-      <h2 class="post-title">End-to-End Encryption: How It Works</h2>
-      <p class="post-meta">Posted on April 27, 2025</p>
-      <p class="post-excerpt">
-        Understanding E2EE is key to defending digital privacy. We break down how it works, what it's good for, and where it can fail.
-      </p>
-    </article>
-
-    <article class="post">
-      <h2 class="post-title">Running a Minimal Blog on Tor</h2>
-      <p class="post-meta">Posted on April 12, 2025</p>
-      <p class="post-excerpt">
-        Learn how to host a privacy-focused blog on the Tor network with static files, zero analytics, and no compromise.
-      </p>
-    </article>
-    
-    <article class="post">
-      <h2 class="post-title">Clean Code: Python Best Practices for 2025</h2>
-      <p class="post-meta">Posted on April 20, 2025</p>
-      <p class="post-excerpt">
-        From f-strings and dataclasses to pyproject.toml and type hints — here’s a distilled guide to writing beautiful, maintainable Python code that plays well with modern tooling and your future self.
-      </p>
-    </article>
-
-    <article class="post">
-      <h2 class="post-title">Pairing-Based Cryptography: A High-Level Primer</h2>
-      <p class="post-meta">Posted on April 6, 2025</p>
-      <p class="post-excerpt">
-        Bilinear pairings on elliptic curves enable powerful protocols like identity-based encryption and attribute-based access control. We explain the concepts, what pairings are, and where they’re used—without the heavy math.
-      </p>
-    </article>
+    <!-- Blog posts go here -->
   </main>
 
   <section class="til-section">
-    <h2 class="section-title">TIL (Today I Learned)</h2>
-
-    <div class="til">
-      <p class="til-body"><strong>🛠 Shell:</strong> You can rerun the last command that began with "ssh" using <code>!ssh</code> in bash/zsh.</p>
-    </div>
-
-    <div class="til">
-      <p class="til-body"><strong>🐍 Python:</strong> Use <code>pathlib.Path().rglob("*.py")</code> to recursively find Python files in a directory.</p>
-    </div>
-
-    <div class="til">
-      <p class="til-body"><strong>📦 Git:</strong> Stash only staged changes with <code>git stash --keep-index</code>.</p>
-    </div>
+    <!-- TIL posts go here -->
   </section>
 
   <footer>
