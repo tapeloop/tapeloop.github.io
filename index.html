@@ -4,62 +4,94 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tapeloop Blog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-color: #0d1117;
+      --text-color: #c9d1d9;
+      --accent-color: #00ff7f;
+      --card-bg: #161b22;
+    }
+
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
-      color: #1f2937;
       padding: 2rem;
+      font-family: 'Fira Code', monospace;
+      background-color: var(--bg-color);
+      color: var(--text-color);
     }
+
     header {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
+
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      color: var(--accent-color);
     }
+
     .subtitle {
-      font-size: 1.1rem;
-      color: #6b7280;
+      color: #8b949e;
+      font-size: 1.2rem;
     }
+
     .post-list {
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto;
     }
+
     .post {
-      background: white;
+      background-color: var(--card-bg);
       padding: 1.5rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      margin-bottom: 1.5rem;
-      transition: box-shadow 0.2s ease;
+      border-left: 4px solid var(--accent-color);
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      transition: transform 0.2s;
     }
+
     .post:hover {
-      box-shadow: 0 6px 10px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
     }
+
     .post-title {
-      font-size: 1.3rem;
-      margin: 0 0 0.5rem;
-      color: #111827;
+      font-size: 1.5rem;
+      margin: 0;
+      color: var(--accent-color);
     }
+
     .post-meta {
       font-size: 0.9rem;
-      color: #6b7280;
+      color: #6e7681;
       margin-bottom: 1rem;
     }
+
     .post-excerpt {
       font-size: 1rem;
-      line-height: 1.5;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      color: #6e7681;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Tapeloop</h1>
-    <p class="subtitle">Thoughts on programming, privacy, cryptography & Python</p>
+    <p class="subtitle">Programming • Privacy • Cryptography • Python</p>
   </header>
 
   <main class="post-list">
@@ -67,7 +99,7 @@
       <h2 class="post-title">Why You Should Learn Python in 2025</h2>
       <p class="post-meta">Posted on May 10, 2025</p>
       <p class="post-excerpt">
-        Python continues to be one of the most versatile and approachable languages out there. Here’s what makes it relevant now more than ever.
+        Python keeps evolving, and its presence in cybersecurity and backend services is stronger than ever. Here’s why it's still the best tool in your kit.
       </p>
     </article>
 
@@ -75,7 +107,7 @@
       <h2 class="post-title">End-to-End Encryption: How It Works</h2>
       <p class="post-meta">Posted on April 27, 2025</p>
       <p class="post-excerpt">
-        We break down the cryptographic concepts behind end-to-end encryption, how it's implemented, and why it's essential for privacy.
+        Understanding E2EE is key to defending digital privacy. We break down how it works, what it's good for, and where it can fail.
       </p>
     </article>
 
@@ -83,9 +115,13 @@
       <h2 class="post-title">Running a Minimal Blog on Tor</h2>
       <p class="post-meta">Posted on April 12, 2025</p>
       <p class="post-excerpt">
-        Want to self-host a blog in a privacy-respecting way? Here's how to deploy a static site over the Tor network without exposing your identity.
+        Learn how to host a privacy-focused blog on the Tor network with static files, zero analytics, and no compromise.
       </p>
     </article>
   </main>
+
+  <footer>
+    &copy; 2025 <a href="https://github.com/tapeloop">tapeloop</a>. All thoughts are my own.
+  </footer>
 </body>
 </html>
