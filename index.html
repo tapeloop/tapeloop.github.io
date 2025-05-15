@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tapeloop Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: #6b7280;
+    }
+    .post-list {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .post {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+      transition: box-shadow 0.2s ease;
+    }
+    .post:hover {
+      box-shadow: 0 6px 10px rgba(0,0,0,0.08);
+    }
+    .post-title {
+      font-size: 1.3rem;
+      margin: 0 0 0.5rem;
+      color: #111827;
+    }
+    .post-meta {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 1rem;
+    }
+    .post-excerpt {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tapeloop</h1>
+    <p class="subtitle">Thoughts on programming, privacy, cryptography & Python</p>
+  </header>
+
+  <main class="post-list">
+    <article class="post">
+      <h2 class="post-title">Why You Should Learn Python in 2025</h2>
+      <p class="post-meta">Posted on May 10, 2025</p>
+      <p class="post-excerpt">
+        Python continues to be one of the most versatile and approachable languages out there. Here’s what makes it relevant now more than ever.
+      </p>
+    </article>
+
+    <article class="post">
+      <h2 class="post-title">End-to-End Encryption: How It Works</h2>
+      <p class="post-meta">Posted on April 27, 2025</p>
+      <p class="post-excerpt">
+        We break down the cryptographic concepts behind end-to-end encryption, how it's implemented, and why it's essential for privacy.
+      </p>
+    </article>
+
+    <article class="post">
+      <h2 class="post-title">Running a Minimal Blog on Tor</h2>
+      <p class="post-meta">Posted on April 12, 2025</p>
+      <p class="post-excerpt">
+        Want to self-host a blog in a privacy-respecting way? Here's how to deploy a static site over the Tor network without exposing your identity.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
