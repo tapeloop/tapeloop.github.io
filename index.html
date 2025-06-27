@@ -1,4 +1,62 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | HackerBlog</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #00ff00;
+      font-family: monospace;
+      margin: 0;
+      padding: 2rem;
+    }
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header, footer {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .post {
+      border-top: 1px dashed #008800;
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+    code, pre {
+      background-color: #111;
+      padding: 0.5rem;
+      display: block;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>HACKERBLOG</h1>
+      <p><a href="/">Home</a> | <a href="/about">About</a></p>
+    </header>
+
+    <main>
+      {% if page.title %}
+        <h2>{{ page.title }}</h2>
+      {% endif %}
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>&copy; {{ site.time | date: "%Y" }} HackerBlog</p>
+    </footer>
+  </div>
+</body>
+</html>
